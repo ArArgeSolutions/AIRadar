@@ -52,8 +52,8 @@ class AIRadarWidget(ScriptedLoadableModuleWidget, VTKObservationMixin):
         self.layout.addWidget(self.authPanel)
         authLayout = qt.QFormLayout(self.authPanel)
 
-        #self.apiLine = qt.QLineEdit("https://airadar.uzem.afsu.edu.tr")
-        self.apiLine = qt.QLineEdit("http://localhost:3005")
+        self.apiLine = qt.QLineEdit("https://airadar.uzem.afsu.edu.tr")
+        #self.apiLine = qt.QLineEdit("http://localhost:3005")
         authLayout.addRow("API Endpoint:", self.apiLine)
         
         self.monaiLine = qt.QLineEdit("http://34.204.196.213:8000")
@@ -810,3 +810,4 @@ class AIRadarLogic(ScriptedLoadableModuleLogic):
             elif resp.status_code in [401, 403]: return False, "Access Denied."
             else: return False, f"Server Error: {resp.status_code}"
         except Exception as e: return False, f"Exception: {e}"
+
