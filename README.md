@@ -22,6 +22,13 @@ AIRadar is a 3D Slicer extension that connects to a clinical backend and MONAI L
 No dedicated publication is currently available for AIRadar.  
 (If a paper becomes available in the future, add the link or PubMed reference here.)
 
+## Privacy and Safety
+
+AIRadar does not download or execute any third-party binaries from untrusted sources.  
+All communication with the clinical backend and MONAI Label server happens over HTTPS and is only triggered by explicit user actions (e.g., logging in, downloading a patient case, uploading a segmentation).  
+No data is sent anywhere without user consent.
+
+
 ## License
 
 This extension is released under the **MIT License**. See [LICENSE](LICENSE) for details.
