@@ -1,12 +1,11 @@
 {
+  "name": "AIRadar",
   "scm": "git",
   "scmurl": "https://github.com/ArArgeSolutions/AIRadarExtension.git",
   "scmrevision": "main",
   "homepage": "https://github.com/ArArgeSolutions/AIRadarExtension",
   "iconurl": "https://raw.githubusercontent.com/ArArgeSolutions/AIRadarExtension/main/Resources/Icons/AIRadar.png",
-  "screenshoturls": "https://raw.githubusercontent.com/ArArgeSolutions/AIRadarExtension/main/Resources/Screenshots/AIRadar_Screenshot1.png",
   "category": "Segmentation",
   "status": "Active"
 }
-
 
